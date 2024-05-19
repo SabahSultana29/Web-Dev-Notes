@@ -1035,6 +1035,15 @@
 //command ls -a to read all the hidden files in that above folder
 //status command displays the state of the code( This command is used to check the status of the code)
 // git add ./git add --a --> this commands adds all the files in the vs code
+//git commit -m "some message" msg shd be meaningfull followed by it check the status of the msg
+
+//The hanges made in our local system can be also visible in remote system(i:e on Github)
+//using Push command
+//Push command -> to upload local repo content to remote repo
+// git push origin main command used
+// git init -->  command is used to create a new git repo in local system rather than making
+//a new repo in github
+//To add & commit at the same time we use of command --> *git commit -am*
 
 //BACKEND - DEVELOPMENT
 //Starting with Node.js
