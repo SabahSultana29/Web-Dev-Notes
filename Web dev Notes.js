@@ -1037,7 +1037,7 @@
 // git add ./git add --a --> this commands adds all the files in the vs code
 //git commit -m "some message" msg shd be meaningfull followed by it check the status of the msg
 
-//The hanges made in our local system can be also visible in remote system(i:e on Github)
+//The changes made in our local system can be also visible in remote system(i:e on Github)
 //using Push command
 //Push command -> to upload local repo content to remote repo
 // git push origin main command used
