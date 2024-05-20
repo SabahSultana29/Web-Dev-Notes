@@ -1045,6 +1045,14 @@
 //a new repo in github
 //To add & commit at the same time we use of command --> *git commit -am*
 
+//Git branches
+//git branch --> (to check current branch)
+//git checkout <branch name> to change the branch or to navigate
+//git checkout -b <new branch name> to create a new branch
+//git branch -d --. to delete the branch
+//the Process to delte the  branch is first checkout by typing the name of branch ,followed by
+//check for git branch to know the current branch then use git branch -d (name of he branch) to delete the branch
+
 //BACKEND - DEVELOPMENT
 //Starting with Node.js
 // Node.js is called the runtime of javascript basically Node.js can be used to run javascript
