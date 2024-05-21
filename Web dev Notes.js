@@ -1006,6 +1006,37 @@
 // first it executes the await functions as we have given the keyword as await
 // then it prints the data ;
 
+//Async and Promise Methods
+//Eg: syntax is as shown
+// const pros = () => {
+//   return "Hi I'm advantageous";
+// };
+// const cons = () => {
+//   return "Hi I'm disadvantageous";
+// };
+// const ledger = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("Hi there! this is your ledger sheet here");
+//       //   reject("I'm busy");
+//     }, 3000);
+//   });
+// };
+
+// const decision = async () => {
+//   let benfit = pros();
+//   console.log(benfit);
+//   let balance = await ledger();
+//   console.log(balance);
+//   let loss = cons();
+//   console.log(loss);
+// };
+// decision();
+// Hi I'm advantageous
+// waits for a few seconds of setTimeout then executes the func ledger()
+// Hi there! this is your ledger sheet here
+// Hi I'm disadvantageous
+
 //Terminal
 //Basics commands
 // ls= list files;(show my files)
@@ -1021,7 +1052,7 @@
 //touch command --> to create new files in a directory
 //touch command is used by giving proper extensions we obtain new files
 
-//New Chatper Git_Github
+//New Chatper --> Git_Github
 // what is Git ?
 // It is a version control system --> online tool that helps us to tracks changes in code
 // What is Github?
@@ -1053,42 +1084,15 @@
 //the Process to delte the  branch is first checkout by typing the name of branch ,followed by
 //check for git branch to know the current branch then use git branch -d (name of he branch) to delete the branch
 
+//Pull Request (PR)--> it lets you tell others about changes you've pushed in a repo on github
+//git pull origin main command -> used to fetch & download content from a remote repo
+//and immediately update the local repo to match thaat content
+
 //BACKEND - DEVELOPMENT
 //Starting with Node.js
 // Node.js is called the runtime of javascript basically Node.js can be used to run javascript
-// outside the browser
+// outside the browser ie : It is used for server side programming
 //Node.js also adds some functionality to Javascript engine V8 to do some more usefull stuff
-
-//Async and Promise Methods
-//Eg: syntax is as shown
-// const pros = () => {
-//   return "Hi I'm advantageous";
-// };
-// const cons = () => {
-//   return "Hi I'm disadvantageous";
-// };
-// const ledger = () => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve("Hi there! this is your ledger sheet here");
-//       //   reject("I'm busy");
-//     }, 3000);
-//   });
-// };
-
-// const decision = async () => {
-//   let benfit = pros();
-//   console.log(benfit);
-//   let balance = await ledger();
-//   console.log(balance);
-//   let loss = cons();
-//   console.log(loss);
-// };
-// decision();
-// Hi I'm advantageous
-// waits for a few seconds of setTimeout then executes the func ledger()
-// Hi there! this is your ledger sheet here
-// Hi I'm disadvantageous
 
 // Sending Responses in Node.js
 // After creating the server by the create listener method we can send responses as well
