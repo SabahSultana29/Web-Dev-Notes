@@ -1094,6 +1094,13 @@
 // outside the browser ie : It is used for server side programming
 //Node.js also adds some functionality to Javascript engine V8 to do some more usefull stuff
 
+//Note: if we need to access the directories of different files in folder then create a index.js
+//named file (mandate step which acts like main func of Java/C++)
+//module.exports = obj created in index.js file
+//const somefuncName = require(directory /folder name)
+// console.log(somefuncname);
+//The above steps shows the procdure for importing modules from directory/folder
+
 // Sending Responses in Node.js
 // After creating the server by the create listener method we can send responses as well
 //Syntax is as shown
@@ -1104,7 +1111,6 @@
 // const htpp = require("http");
 // const server = htpp.createServer((req, res) => {
 //   console.log(req.url, req.method, req.headers);
-//   res.setHeader("Content-type", "text/html");
 //   res.write("<html>");
 //   res.write("<head<title>My first Node.js application</title</head>");
 //   res.write("<body><h1>Hi this is my first Node.js server</h1></body");
@@ -1120,8 +1126,10 @@
 //GET request is automatically sent whenyou click a link or enter a url
 //POST request has to be set up by us by creating  a from like html element
 
-//Routing & Redirecting REquests is asshown on the network page of server were we get the response of
+//Routing & Redirecting Requests is as shown on the network page of server were we get the response of
 //requested message
+//require()  --> a built in func to include external modules that exist in separate files
+//module.exports()-->  a special object
 // const fs = require("fs");
 // const http = require("http");
 // const server = http.createServer((req, res) => {
@@ -1153,4 +1161,8 @@
 // });
 // server.listen(5000);
 
-//Parsing requests bodies
+//NPM (Node Package Manager)[very important topic is back-end development]
+//npm is the standard package manager for Node.js
+//This NPM is used as
+// 1: Library of Packages
+// 2: Command line tool for other developers where they can download the versions of Library of Packages
