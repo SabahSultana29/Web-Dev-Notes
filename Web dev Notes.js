@@ -1166,3 +1166,20 @@
 //This NPM is used as
 // 1: Library of Packages
 // 2: Command line tool for other developers where they can download the versions of Library of Packages
+//node modules --> the node_modules folder contains every instaled dependency for your project
+//Node modules are dependent modules which are automatically created when we install a package
+//Package-lock.json --> it records the exact version of every installed dependency,
+//including its sub dependencies and thier versions (basically it stores all the info abt the node_modulesversions & dependencies )
+//To make or create our own Package then use cmd *npm init* provided first create a new directory
+//Local installations of packages in a particular directory is the best practise
+
+//Import vs require
+//Never use both of them at a time in a project ,use anyone of it
+//Syntax for import
+//import {something} from "./file Name.js";
+//It is mandate to add an extension of .js at the end of the file name
+//Also export(1 step) the code in the files follwed by import(step2)
+//define "type" = "module" in package.json for import statement
+//We can't selectivel load only the places we need ith require but with import ,we can selectively
+//,load only the pieces we need,which can save memory
+//Loading is synchronous for 'require' but can be asynchronous for 'import'
