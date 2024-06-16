@@ -1,3 +1,3 @@
-# Web-Dev-Notes
+# Web-Dev
 
-Web Development Notes for my reference, starting with JavaScript
+Web Development key Points for my reference, starting with JavaScript
