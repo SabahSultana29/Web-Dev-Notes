@@ -1218,6 +1218,7 @@
 //   console.log(`app listening to the port" ,${port}`);
 // });
 // //app.use is a method is Express.js used to send requests
+//app.use listens to each and every requests
 // app.use((req, res) => {
 //   console.log("Generate Request!");
 //   // res.send("This is a  response ");
@@ -1225,8 +1226,32 @@
 //   res.send(
 //     "<h1>Favrouite Car</h1><ul><li>Range Rover</li><li>Color:White</li><li>No of seats: 8</li></ul>"
 //   );
-//   //The response can be of any tyoe like HTML ,JSON format
+//   //The response can be of any type like HTML ,JSON format
+//Only one response can be sent at a time , multiple responses sending is not allowed
 //   //In this way we send the response in express.js
 // });
 // //On the local Host 3000 we won't be able to see the log part instead it's just used to connect to server
 // //by default we make use of terminal to run the cmd where we get our request generated
+
+//Routing
+//It is process of selecting a path for traffic in a network or between or across multiple networks
+//Eg: /home ,/ search, /help etc  all thee are the path in a network
+//Now using app.get to send requests --> Method of express.js
+app.get("/", (req, res) => {
+  res.send("You searched this page");
+});
+app.get("/search", (req, res) => {
+  res.send("you searched for the search bar");
+});
+app.get("/help", (req, res) => {
+  res.send("In search of help");
+});
+//In this way multiple responses can be sent using app.get method ,also multiple callbacks can't be accessed
+//Only one response at a time can be accesssed
+// app.get("*", (req, res) => {
+//   res.send("page not found 404 error");
+// });
+app.post("/", (req, res) => {
+  res.send("You sent a post req to root");
+});
+//This is the way to send different requests based on differebt specific task
