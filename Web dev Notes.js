@@ -1181,5 +1181,52 @@
 //Also export(1 step) the code in the files follwed by import(step2)
 //define "type" = "module" in package.json for import statement
 //We can't selectivel load only the places we need ith require but with import ,we can selectively
-//,load only the pieces we need,which can save memory
+//load only the pieces we need,which can save memory
 //Loading is synchronous for 'require' but can be asynchronous for 'import'
+
+//figlet is the npm package which prints the code of dotted lines or --- codes
+// const figlet = require("figlet");
+// figlet("Sabah Sultana!!", function (err, data) {
+//   if (err) {
+//     console.log("Something went wrong...");
+//     console.dir(err);
+//     return;
+//   }
+//   console.log(data);
+// });
+//As shown in above Syntax require the figlet
+
+//Express.js
+//Strating with Express.js
+//Download the package.json by giving cmd as npm init
+//followed by npm i express to install the npm  express package
+//run the  code using cmd npm start
+//importing the module in express.js
+// express()
+// Creates an Express application.
+// The express() function is a top-level function exported by the express module.
+// const express = require("express"); //express.js heps in server side programming where it listens
+// const app = express(); //function called express
+
+//How send Response in Express.js
+// const express = require("express"); //express.js heps in server side programming where it listens
+// //the requests of the client
+// const app = express(); //function called express
+// //app is an object
+// let port = 3000;
+// app.listen(port, () => {
+//   console.log(`app listening to the port" ,${port}`);
+// });
+// //app.use is a method is Express.js used to send requests
+// app.use((req, res) => {
+//   console.log("Generate Request!");
+//   // res.send("This is a  response ");
+//   //Based on requests How can I create a response
+//   res.send(
+//     "<h1>Favrouite Car</h1><ul><li>Range Rover</li><li>Color:White</li><li>No of seats: 8</li></ul>"
+//   );
+//   //The response can be of any tyoe like HTML ,JSON format
+//   //In this way we send the response in express.js
+// });
+// //On the local Host 3000 we won't be able to see the log part instead it's just used to connect to server
+// //by default we make use of terminal to run the cmd where we get our request generated
